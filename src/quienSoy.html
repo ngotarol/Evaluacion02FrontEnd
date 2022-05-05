@@ -1,92 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>¿Quién soy?</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
     <style>
-        *{
-            margin: 0px;
-            padding: 0px;
-            -webkit-border-radius: 7px;
-            -moz-border-radius: 7px;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        }
-        header{
-            text-align: center;
-            margin: 30px;
-            font-size: larger;
-        }
-        a {
-            text-decoration: none;
+        footer{
+            margin-top: 20px;
+            padding: 40px;
+            display: inline-block;
+            bottom: 0;
+            width: 100%;
+            height: 80px;
+            background-color: darkolivegreen;
             color: white;
         }
+    </style>    
+    </head>
 
-        body{
-            color: #325050;
-            background: #fff;
-            font-size: medium;
-        }
-        div {
-            -moz-border-radius: 7px;
-            -webkit-border-radius: 7px;
-            padding: 3px;
-            width: 100%;
-            }
-        nav {
-            background-color:darkolivegreen;
-            overflow: hidden;
-            -moz-border-radius: 7px;
-            -webkit-border-radius: 7px;
-            width: 100%;
-            font-size: large;
-        }
-        nav a{
-            padding: 10px 40px;
-            float: left; 
-        }
-        nav a:hover{
-            background-color: rgb(87, 124, 87);
-
-            color: antiquewhite;
-            font-weight: bold;
-        }
-        footer{
-            display: inline-block;
-            margin-top: 20px;
-            background-color:darkolivegreen;
-            padding: 20px;
-            text-align: center;
-            position:relative;
-            bottom: 0px;
-            width: 100%;
-            -moz-border-radius: 7px;
-            -webkit-border-radius: 7px;
-            color: wheat;
-            font-size: small ;
-        }
-    </style>
-</head>
 <body>
-    <header>
-        <h1>
-            Bicho hoja
-        </h1>
-    </header>
-        <nav>
-            <a href="quienSoy.html">¿Quién soy?</a>
-            <a href="dondeEncuentro.html">¿Dónde vivo?</a>
-            <a href="Contacto.html">Contacto</a>        </nav>
-        <div>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Bichos Hoja</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="quienSoy.html">Detalles</a></li>
+                    <li><a href="galleria.html">Galería</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
         </div>
-    <footer>
-        <div style="text-align: center;">
-            Página creada por Natalia Otárola B - INACAP - Mayo 2022
+    </nav>
+    <div class="jumbotron">
+        <div class="container">
+            <h1>Bienvenido!</h1>
+            <p>Conoceremos a los Phylliidae o más conocidos como <span class="label label-success">Bicho Hoja</span>
+            </p>
         </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <img src="https://static.educalingo.com/img/en/800/phylliidae.jpg" class="img-rounded img-responsive"
+                    style="width: 300px; max-width: 100%;" alt="Phylliidae">
+            </div>
+            <div class="col-md-4">
+                <h2>Quiénes son los Phylliidae</h2>
+                <p>Los fílidos (Phylliidae) son una familia del orden de los fásmidos que pertenece al suborden
+                    Areolatae. Se conocen vulgarmente como insectos hoja.
+                </p>
+                <div class="panel panel-default">
+                    <div class="panel-heading">Detalles</div>
+                    <table class="table table-condensed table-striped">
+                       <tbody>
+                           <tr>
+                               <td>Reino</td>
+                               <td>Animalia</td>
+                           </tr>
+                           <tr>
+                               <td>Filo</td>
+                               <td>Arthópoda</td>
+                           </tr>
+                           <tr>
+                            <td>Clase</td>
+                            <td>Insecta</td>
+                        </tr>
+                       </tbody>
+                      
+                    </table>
+                    
+                </div>
+                <p><a class="btn btn-success" href="https://es.wikipedia.org/wiki/Phylliidae" target="_blank"
+                        role="button">Revisa más a fondo &raquo;</a></p>
+            </div>
+            <div class="col-md-4">
+                <h2>Dónde viven</h2>
+                <p>En todo el mundo!.</p>
+                <p>En el siguiente enlace puedes encontrar un insecto hoja GIGANTE </p>
+                <p><img src="https://vigozoo.com/wp-content/uploads/2020/02/Hoja-gigante-1920x900.jpg"
+                    class="img-rounded" style="width: 600px; max-width: 100%;" alt="Insecto hoja gigante"></p>
+                <p><a class="btn btn-success" href="https://vigozoo.com/insecto-hoja-gigante/" role="button">Ver más
+                        &raquo;</a></p>
+            </div>
+        </div>
+        <div class="row" style="padding-top: 40px;">
+            <div class="col-md-8">
+                <h2>Colores</h2>
+                <p>Por montones! puedes revisar varios especímenes en nuestro apartado de galería. </p>
+                <p>También te dejamos un enlace a una galería externa con imágenes en alta resolución. </p>
+                <p><a class="btn btn-success" href="https://www.alamy.com/stock-photo/phylliidae.html"
+                        role="button">Ver más &raquo;</a></p>
+            </div>
+            <div class="col-md-4">
+                <p><img src="images/02.jpg" class="img-rounded" style="width: 500px; max-width: 1000px;"
+                        alt="Insecto hoja gigante"></p>
+            </div>
 
-
-    </footer>
+        </div>
+    </div>
+        <footer>
+            <div style="text-align: center;">
+                <p>Página creada por Natalia Otárola B - INACAP - Mayo 2022</p>
+            </div>
+        </footer>
 </body>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"
+    integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js"
+    integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+    crossorigin="anonymous"></script>
 
 </html>
